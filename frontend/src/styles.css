@@ -1,0 +1,89 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #111;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.panel {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: white;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+}
+
+.label {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.stop-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stop-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+
+.stop-card.selected {
+  background: #eef6ff;
+  border-color: #7aaef7;
+}
+
+.stop-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.error {
+  color: #b00020;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
